@@ -16,10 +16,13 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
+    "prepare": "husky",
     "prepublishOnly": "npm run build",
     "test:esm": "node test/esm.test.mjs",
     "test:cjs": "node test/cjs.test.js",
-    "test": "npm run test:cjs && npm run test:esm"
+    "test": "npm run test:cjs && npm run test:esm",
+    "lint-staged": "lint-staged",
+    "lint": "eslint ."
   },
   "keywords": [
     "mortgage",
@@ -42,6 +45,16 @@
     "access": "public"
   },
   "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "unbuild": "^3.5.0"
+  },
+  "resolutions": {
+    "eslint": "^8.2.0"
   }
 }
