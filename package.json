@@ -30,9 +30,11 @@
   "author": "avenauche",
   "license": "MIT",
   "repository": {
+    "type": "git",
     "url": "https://github.com/avenauche/mortgage-calculator"
   },
   "bugs": {
+    "type": "git",
     "url": "https://github.com/avenauche/mortgage-calculator/issues"
   },
   "homepage": "https://github.com/avenauche/mortgage-calculator",
